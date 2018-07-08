@@ -17,6 +17,11 @@ const HeaderWrapper = styled.header`
   opacity: 0.8;
 `
 
+const MenuWrapper = styled.div`
+  height: 89px;
+  padding-top: 21px;
+`
+
 class App extends Component {
   render() {
     return (
@@ -26,7 +31,11 @@ class App extends Component {
             <Header />
           </Grid>
         </HeaderWrapper>
-        <Menu />
+        <MenuWrapper>
+          <Grid>
+            <Menu />
+          </Grid>
+        </MenuWrapper>
         <Main /> 
       </div>
     );
